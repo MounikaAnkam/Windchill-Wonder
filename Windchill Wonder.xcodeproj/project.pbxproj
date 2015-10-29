@@ -13,6 +13,8 @@
 		9F372D291A787E3800E98D8D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F372D281A787E3800E98D8D /* Images.xcassets */; };
 		9F372D2C1A787E3800E98D8D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F372D2A1A787E3800E98D8D /* LaunchScreen.xib */; };
 		9F372D381A787E3800E98D8D /* Windchill_WonderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F372D371A787E3800E98D8D /* Windchill_WonderTests.swift */; };
+		9FD56F8F1A79B33700E102F2 /* img_2876c.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FD56F8E1A79B33700E102F2 /* img_2876c.jpg */; };
+		9FD56F931A79B8AD00E102F2 /* Winter1-Season-Snow-Road-HD-Wallpaper-Desktop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FD56F921A79B8AD00E102F2 /* Winter1-Season-Snow-Road-HD-Wallpaper-Desktop.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		9F372D311A787E3800E98D8D /* Windchill WonderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Windchill WonderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F372D361A787E3800E98D8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F372D371A787E3800E98D8D /* Windchill_WonderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Windchill_WonderTests.swift; sourceTree = "<group>"; };
+		9FD56F8E1A79B33700E102F2 /* img_2876c.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img_2876c.jpg; sourceTree = "<group>"; };
+		9FD56F921A79B8AD00E102F2 /* Winter1-Season-Snow-Road-HD-Wallpaper-Desktop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Winter1-Season-Snow-Road-HD-Wallpaper-Desktop.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				9F372D211A787E3800E98D8D /* AppDelegate.swift */,
+				9FD56F921A79B8AD00E102F2 /* Winter1-Season-Snow-Road-HD-Wallpaper-Desktop.jpg */,
+				9FD56F8E1A79B33700E102F2 /* img_2876c.jpg */,
 				9F372D231A787E3800E98D8D /* ViewController.swift */,
 				9F372D251A787E3800E98D8D /* Main.storyboard */,
 				9F372D281A787E3800E98D8D /* Images.xcassets */,
@@ -194,6 +200,8 @@
 			files = (
 				9F372D271A787E3800E98D8D /* Main.storyboard in Resources */,
 				9F372D2C1A787E3800E98D8D /* LaunchScreen.xib in Resources */,
+				9FD56F8F1A79B33700E102F2 /* img_2876c.jpg in Resources */,
+				9FD56F931A79B8AD00E102F2 /* Winter1-Season-Snow-Road-HD-Wallpaper-Desktop.jpg in Resources */,
 				9F372D291A787E3800E98D8D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +413,7 @@
 				9F372D3D1A787E3800E98D8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F372D3E1A787E3800E98D8D /* Build configuration list for PBXNativeTarget "Windchill WonderTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +422,7 @@
 				9F372D401A787E3800E98D8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

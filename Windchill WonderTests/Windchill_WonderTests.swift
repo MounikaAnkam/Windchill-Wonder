@@ -2,8 +2,8 @@
 //  Windchill_WonderTests.swift
 //  Windchill WonderTests
 //
-//  Created by Jaini,Santhoshi on 1/27/15.
-//  Copyright (c) 2015 Santhoshi. All rights reserved.
+//  Created by Mounika Ankam on 1/27/15.
+//  Copyright (c) 2015 Mounika Ankam. All rights reserved.
 //
 
 import UIKit

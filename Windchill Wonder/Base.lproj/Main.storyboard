@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Windchill_Wonder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +17,203 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Winter1-Season-Snow-Road-HD-Wallpaper-Desktop.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="1VZ-w4-Szd">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Outside Air Temp(°F):" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pG4-Wk-HaJ">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wind Speed(mph):" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7X-Rh-k6I">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o9f-dp-jpu">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Windchill:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9s-1m-tZN">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N/A" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7a-bV-y8x">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Windchill Wonder" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVS-sc-2KC">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="zSf-d4-frh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="zSf-d4-frh"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="zSf-d4-frh"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wB7-xK-KPY">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ow-Sa-2d7">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Calculate Windchill">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doSomething:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="68Z-Ke-47Z"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZVS-sc-2KC" firstAttribute="centerX" secondItem="2Ow-Sa-2d7" secondAttribute="centerX" id="0r2-b1-NQ4"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="2Ow-Sa-2d7" secondAttribute="bottom" constant="305" id="8BW-ES-Vjg"/>
+                            <constraint firstItem="o9f-dp-jpu" firstAttribute="leading" secondItem="F7X-Rh-k6I" secondAttribute="trailing" constant="8" symbolic="YES" id="C8P-26-66j"/>
+                            <constraint firstItem="J7a-bV-y8x" firstAttribute="leading" secondItem="f9s-1m-tZN" secondAttribute="trailing" constant="8" symbolic="YES" id="D9U-SS-tFE"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="1VZ-w4-Szd" secondAttribute="bottom" constant="-86" id="D9f-pz-l3s"/>
+                            <constraint firstItem="2Ow-Sa-2d7" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="95" id="DmP-wl-FQg"/>
+                            <constraint firstItem="o9f-dp-jpu" firstAttribute="top" secondItem="wB7-xK-KPY" secondAttribute="bottom" constant="21" id="FcQ-VR-L6o"/>
+                            <constraint firstItem="F7X-Rh-k6I" firstAttribute="top" secondItem="pG4-Wk-HaJ" secondAttribute="bottom" constant="30" id="GXj-QY-dll"/>
+                            <constraint firstItem="ZVS-sc-2KC" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="25" id="Li3-gS-REV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="J7a-bV-y8x" secondAttribute="trailing" constant="54" id="MTO-nr-2on"/>
+                            <constraint firstItem="wB7-xK-KPY" firstAttribute="leading" secondItem="pG4-Wk-HaJ" secondAttribute="trailing" constant="8" symbolic="YES" id="Ppy-EW-tOy"/>
+                            <constraint firstItem="J7a-bV-y8x" firstAttribute="top" secondItem="o9f-dp-jpu" secondAttribute="bottom" constant="28" id="UDT-Ys-jKH"/>
+                            <constraint firstItem="o9f-dp-jpu" firstAttribute="leading" secondItem="wB7-xK-KPY" secondAttribute="leading" id="W9u-hx-3T3"/>
+                            <constraint firstItem="wB7-xK-KPY" firstAttribute="top" secondItem="ZVS-sc-2KC" secondAttribute="bottom" constant="34" id="Xm0-iT-BfW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZVS-sc-2KC" secondAttribute="trailing" constant="59" id="ZUU-sT-mU5"/>
+                            <constraint firstItem="f9s-1m-tZN" firstAttribute="top" secondItem="F7X-Rh-k6I" secondAttribute="bottom" constant="33" id="a86-Cr-VQj"/>
+                            <constraint firstItem="J7a-bV-y8x" firstAttribute="leading" secondItem="o9f-dp-jpu" secondAttribute="leading" id="anI-VQ-bBZ"/>
+                            <constraint firstItem="wB7-xK-KPY" firstAttribute="trailing" secondItem="o9f-dp-jpu" secondAttribute="trailing" id="b46-KG-QJs"/>
+                            <constraint firstItem="ZVS-sc-2KC" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="70" id="cod-RP-jjG"/>
+                            <constraint firstItem="pG4-Wk-HaJ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="3" id="eyM-9b-2qF"/>
+                            <constraint firstItem="F7X-Rh-k6I" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="21" id="fM0-3N-g3a"/>
+                            <constraint firstItem="1VZ-w4-Szd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="hcq-cY-N1A"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wB7-xK-KPY" secondAttribute="trailing" constant="21" id="iJO-Fw-HvZ"/>
+                            <constraint firstItem="J7a-bV-y8x" firstAttribute="baseline" secondItem="f9s-1m-tZN" secondAttribute="baseline" id="kBJ-DE-iQB"/>
+                            <constraint firstItem="1VZ-w4-Szd" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="r5O-GE-LxC"/>
+                            <constraint firstItem="pG4-Wk-HaJ" firstAttribute="top" secondItem="ZVS-sc-2KC" secondAttribute="bottom" constant="38" id="rlW-H7-qtj"/>
+                            <constraint firstAttribute="trailing" secondItem="1VZ-w4-Szd" secondAttribute="trailing" id="vDF-N8-WDW"/>
+                            <constraint firstItem="2Ow-Sa-2d7" firstAttribute="top" secondItem="f9s-1m-tZN" secondAttribute="bottom" constant="44" id="xzx-Mb-uhc"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="1VZ-w4-Szd"/>
+                                <exclude reference="pG4-Wk-HaJ"/>
+                                <exclude reference="F7X-Rh-k6I"/>
+                                <exclude reference="o9f-dp-jpu"/>
+                                <exclude reference="f9s-1m-tZN"/>
+                                <exclude reference="J7a-bV-y8x"/>
+                                <exclude reference="ZVS-sc-2KC"/>
+                                <exclude reference="wB7-xK-KPY"/>
+                                <exclude reference="2Ow-Sa-2d7"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="8BW-ES-Vjg"/>
+                                <exclude reference="GXj-QY-dll"/>
+                                <exclude reference="fM0-3N-g3a"/>
+                                <exclude reference="D9U-SS-tFE"/>
+                                <exclude reference="MTO-nr-2on"/>
+                                <exclude reference="UDT-Ys-jKH"/>
+                                <exclude reference="anI-VQ-bBZ"/>
+                                <exclude reference="kBJ-DE-iQB"/>
+                                <exclude reference="0r2-b1-NQ4"/>
+                                <exclude reference="Li3-gS-REV"/>
+                                <exclude reference="ZUU-sT-mU5"/>
+                                <exclude reference="cod-RP-jjG"/>
+                                <exclude reference="a86-Cr-VQj"/>
+                                <exclude reference="C8P-26-66j"/>
+                                <exclude reference="FcQ-VR-L6o"/>
+                                <exclude reference="W9u-hx-3T3"/>
+                                <exclude reference="eyM-9b-2qF"/>
+                                <exclude reference="rlW-H7-qtj"/>
+                                <exclude reference="Ppy-EW-tOy"/>
+                                <exclude reference="Xm0-iT-BfW"/>
+                                <exclude reference="b46-KG-QJs"/>
+                                <exclude reference="iJO-Fw-HvZ"/>
+                                <exclude reference="DmP-wl-FQg"/>
+                                <exclude reference="xzx-Mb-uhc"/>
+                                <exclude reference="D9f-pz-l3s"/>
+                                <exclude reference="hcq-cY-N1A"/>
+                                <exclude reference="r5O-GE-LxC"/>
+                                <exclude reference="vDF-N8-WDW"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="1VZ-w4-Szd"/>
+                                <include reference="pG4-Wk-HaJ"/>
+                                <include reference="F7X-Rh-k6I"/>
+                                <include reference="o9f-dp-jpu"/>
+                                <include reference="f9s-1m-tZN"/>
+                                <include reference="J7a-bV-y8x"/>
+                                <include reference="ZVS-sc-2KC"/>
+                                <include reference="wB7-xK-KPY"/>
+                                <include reference="2Ow-Sa-2d7"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="8BW-ES-Vjg"/>
+                                <include reference="GXj-QY-dll"/>
+                                <include reference="fM0-3N-g3a"/>
+                                <include reference="D9U-SS-tFE"/>
+                                <include reference="MTO-nr-2on"/>
+                                <include reference="UDT-Ys-jKH"/>
+                                <include reference="anI-VQ-bBZ"/>
+                                <include reference="kBJ-DE-iQB"/>
+                                <include reference="0r2-b1-NQ4"/>
+                                <include reference="Li3-gS-REV"/>
+                                <include reference="ZUU-sT-mU5"/>
+                                <include reference="cod-RP-jjG"/>
+                                <include reference="a86-Cr-VQj"/>
+                                <include reference="C8P-26-66j"/>
+                                <include reference="FcQ-VR-L6o"/>
+                                <include reference="W9u-hx-3T3"/>
+                                <include reference="eyM-9b-2qF"/>
+                                <include reference="rlW-H7-qtj"/>
+                                <include reference="Ppy-EW-tOy"/>
+                                <include reference="Xm0-iT-BfW"/>
+                                <include reference="b46-KG-QJs"/>
+                                <include reference="iJO-Fw-HvZ"/>
+                                <include reference="DmP-wl-FQg"/>
+                                <include reference="xzx-Mb-uhc"/>
+                                <include reference="D9f-pz-l3s"/>
+                                <include reference="hcq-cY-N1A"/>
+                                <include reference="r5O-GE-LxC"/>
+                                <include reference="vDF-N8-WDW"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="AirTemp" destination="wB7-xK-KPY" id="Use-Bq-v9N"/>
+                        <outlet property="wc" destination="J7a-bV-y8x" id="Rdt-0w-seH"/>
+                        <outlet property="windspeed" destination="o9f-dp-jpu" id="ktD-ec-Dsc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="162" y="129"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Winter1-Season-Snow-Road-HD-Wallpaper-Desktop.jpg" width="1536" height="1020"/>
+    </resources>
 </document>
